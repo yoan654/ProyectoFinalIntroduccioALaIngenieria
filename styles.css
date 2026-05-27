@@ -1,11 +1,4 @@
-/* ============================================================
-   SALUD QUINDÍO — Estilos principales
-   Proyecto: Método de los 7 Pasos del Ingeniero
-   Autores: Yoan Sebastian Bermudez Martinez
-            Santiago Cortez Valencia
-   ============================================================ */
 
-/* ---- VARIABLES DE COLOR ---- */
 :root {
   --verde:        #0F6E56;
   --verde-claro:  #1D9E75;
@@ -259,6 +252,14 @@ section {
 }
 
 /* ---- SECCIÓN VIDEO ---- */
+
+.video-placeholder iframe {
+  width: 100%;
+  max-width: 100%;
+  border: none;
+}
+
+
 #video {
   background: var(--gris-oscuro);
 }

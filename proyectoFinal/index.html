@@ -1,0 +1,626 @@
+<!--Oe cortez no se le olvide agregar la reflexion en el paso 7 y borrar los comentarios que esten por ahí-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Salud Quindío – Método de los 7 Pasos del Ingeniero</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+ 
+<!-- navegador -->
+<nav>
+  <div class="logo">Salud Quindío</div>
+  <ul>
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#grupo">Grupo</a></li>
+    <li><a href="#contexto">Problema</a></li>
+    <li><a href="#pasos">7 Pasos</a></li>
+    <li><a href="#solucion">Solución</a></li>
+    <li><a href="#juego">Juego</a></li>
+    <li><a href="#referencias">Referencias</a></li>
+  </ul>
+</nav>
+ 
+<!--INICIO-->
+<section id="inicio">
+  <div class="hero-inner">
+    <div class="hero-tag">Ingeniería de Sistemas · Tema 4</div>
+    <h1 class="hero-title">
+      Desorganización en la<br/>
+      <em>asignación de citas médicas</em><br/>
+      en el Quindío
+    </h1>
+    <p class="hero-desc">
+      Aplicación del Método de los 7 Pasos del Ingeniero para analizar y proponer
+      soluciones al caos en la agenda médica de los hospitales públicos del departamento.
+    </p>
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <span>Asignatura</span>
+        <span>Introducción a la Ingeniería de Sistemas</span>
+      </div>
+      <div class="hero-meta-item">
+        <span>Departamento</span>
+        <span>Quindío, Colombia</span>
+      </div>
+      <div class="hero-meta-item">
+        <span>Metodología</span>
+        <span>7 Pasos del Ingeniero</span>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!--nosotros jajaja-->
+<section id="grupo">
+  <div class="container">
+    <div class="section-label">Quiénes somos</div>
+    <h2 class="section-title">Presentación del grupo</h2>
+    <div class="divider"></div>
+    <p>Somos estudiantes de la asignatura <strong>Introducción a la Ingeniería de Sistemas y Computación</strong>, comprometidos con identificar y proponer soluciones a problemáticas reales de nuestra región.</p>
+ 
+    <div class="grupo-grid">
+      <div class="integrante-card">
+        <h4>Yoan Sebastian Bermudez Martinez</h4>
+        <p>Código: 1110043764</p>
+      </div>
+      <div class="integrante-card">
+        <h4>Santiago Cortez Valencia</h4>
+        <p>Código: 1091203954</p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- zona video-->
+<section id="video">
+  <div class="container">
+    <div class="section-label" style="color:#9FE1CB">Video de introducción</div>
+    <h2 class="section-title light">Presentación en video</h2>
+    <div class="divider"></div>
+ 
+    <div class="video-placeholder">
+      <div class="play-btn">
+        <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+      </div>
+      <p><strong style="color:#D3D1C7">Video explicativo del proyecto</strong><br/>
+      5–7 minutos · YouTube público o no listado</p>
+      <a href="#">🔗 Enlace al video (pendiente)</a>
+    </div>
+  </div>
+</section>
+ 
+<!-- contexto del problema a tratar -->
+<section id="contexto">
+  <div class="container">
+    <div class="section-label">El problema</div>
+    <h2 class="section-title">Contexto del problema</h2>
+    <div class="divider"></div>
+ 
+    <p>
+      En el departamento del Quindío, los hospitales públicos presentan graves deficiencias
+      en el proceso de asignación de citas médicas. Los usuarios enfrentan demoras prolongadas,
+      fallas en los sistemas de agendamiento y una atención al ciudadano que no responde a las
+      necesidades reales de la población.
+    </p>
+ 
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="num">~10 días</div>
+        <div class="label">Tiempo promedio de espera reportado por encuestados del Quindío (encuesta propia, n=27)</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">89%</div>
+        <div class="label">De los encuestados tuvo dificultades en el proceso de solicitud de cita</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">+$1 billón</div>
+        <div class="label">Deuda de EPS a hospitales públicos y privados del Quindío (mayo 2026)</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">$17.000M</div>
+        <div class="label">Deuda específica de EPS con Redsalud Armenia, equivalente a medio año de operación</div>
+      </div>
+    </div>
+ 
+    <h4 class="subsection-label">Causas identificadas</h4>
+    <ul class="lista-causas">
+      <li>Sistemas de agendamiento obsoletos o inexistentes</li>
+      <li>Falta de digitalización de los procesos administrativos</li>
+      <li>Personal insuficiente en ventanillas de atención</li>
+      <li>Desconocimiento del ciudadano sobre los canales disponibles</li>
+      <li>Deuda creciente de las EPS a las IPS, que limita la capacidad de atención</li>
+      <li>Mala comunicación entre EPS y centros de salud del departamento</li>
+    </ul>
+ 
+    <h4 class="subsection-label">Testimonios de la comunidad</h4>
+ 
+    <blockquote class="testimonio">
+      "Siempre dicen que no hay agendamiento. He esperado hasta cuatro meses por una cita para
+      mi hija con cardiopatía congénita. Inicialmente estaba con Asmetsalud, pero tuve que
+      interponer una tutela que no fue cumplida."
+      <cite>— Luisa Fernanda Zapata Vélez, usuaria afectada · Crónica del Quindío, sept. 2024</cite>
+    </blockquote>
+ 
+    <blockquote class="testimonio">
+      "No podemos garantizar la calidad que queremos. Recibimos a diario quejas por demoras
+      en cirugías, citas y entrega de medicamentos."
+      <cite>— Luisa Fernanda Arcila Arcila, Secretaria de Salud del Quindío · Crónica del Quindío, mayo 2026</cite>
+    </blockquote>
+ 
+    <blockquote class="testimonio">
+      "Las EPS nos deben $17.000 millones — eso es media vigencia presupuestal, medio año de
+      trabajo. Hemos aprendido a administrar la pobreza."
+      <cite>— José Antonio Correa López, Gerente de Redsalud Armenia · Crónica del Quindío, mayo 2026</cite>
+    </blockquote>
+ 
+  </div>
+</section>
+ 
+<!-- 7 pass del ingeniero -->
+<section id="pasos">
+  <div class="container">
+    <div class="section-label">Metodología</div>
+    <h2 class="section-title">Los 7 Pasos del Ingeniero</h2>
+    <div class="divider"></div>
+    <p style="margin-bottom:2rem">
+      A continuación se documenta la aplicación de cada uno de los siete pasos del método
+      de resolución de problemas de ingeniería, aplicados al problema de citas médicas en el Quindío.
+    </p>
+ 
+    <!-- paso 1 -->
+    <div class="paso open">
+      <div class="paso-header" onclick="togglePaso(this)">
+        <div class="paso-num">01</div>
+        <div class="paso-header-text">
+          <h3>Definición del problema</h3>
+          <p>Identificar con claridad qué problema se va a resolver</p>
+        </div>
+        <span class="paso-toggle">+</span>
+      </div>
+      <div class="paso-body">
+        <h4>Enunciado del problema</h4>
+        <p>Los usuarios de los hospitales y centros de salud públicos del departamento del Quindío
+        enfrentan serias dificultades para obtener citas médicas de manera oportuna. El proceso de
+        agendamiento es lento, poco claro y en muchos casos inaccesible para personas mayores o
+        de zonas rurales.</p>
+ 
+        <h4 style="margin-top:1.25rem">¿Por qué es un problema de ingeniería?</h4>
+        <p>Requiere analizar sistemas de información, flujos de procesos, herramientas tecnológicas
+        y necesidades de los usuarios para diseñar una solución sistemática y replicable.</p>
+        <img
+          src="hospital.png"
+          alt="Sala hospitalaria con pacientes en camas atendidos por personal médico"
+          class="img-evidencia"
+        />
+        <p class="img-caption">Representación de la saturación en los servicios hospitalarios públicos.</p>
+      </div>
+    </div>
+ 
+    <!-- paso 2 -->
+    <div class="paso">
+      <div class="paso-header" onclick="togglePaso(this)">
+        <div class="paso-num">02</div>
+        <div class="paso-header-text">
+          <h3>Recopilación de información</h3>
+          <p>Reunir datos, evidencias y fuentes relevantes</p>
+        </div>
+        <span class="paso-toggle">+</span>
+      </div>
+      <div class="paso-body">
+        <h4>Fuentes consultadas</h4>
+        <ul>
+          <li>Secretaría de Salud del Quindío</li>
+          <li>Superintendencia Nacional de Salud (reportes de quejas por IPS)</li>
+          <li>Encuesta propia aplicada a 27 usuarios del departamento</li>
+          <li>Crónica del Quindío — noticias locales sobre salud pública</li>
+          <li>ConsultorSalud — análisis de la Circular 038 de 2025</li>
+          <li>Corte Constitucional — Auto 1174 de 2025</li>
+        </ul>
+ 
+        <h4 style="margin-top:1.25rem">Resultados de encuesta aplicada</h4>
+        <p style="font-size:0.92rem; margin-bottom:1rem;">
+          Se aplicó una encuesta a <strong>27 personas</strong> del departamento del Quindío
+          con cuatro preguntas clave. Los resultados son los siguientes:
+        </p>
+ 
+        <img
+          src="encuesta.png"
+          alt="Infografía con los resultados de la encuesta sobre citas médicas en el Quindío"
+          class="img-encuesta"
+        />
+ 
+        <h4 style="margin-top:1.5rem">Datos clave hallados en fuentes oficiales</h4>
+        <div class="tabla-wrapper">
+          <table>
+            <thead>
+              <tr><th>Indicador</th><th>Valor</th><th>Fuente</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Espera promedio para medicina general (estándar)</td><td>~1,49 días (en la práctica, mucho mayor)</td><td>Corte Constitucional, Auto 1174 de 2025</td></tr>
+              <tr><td>Espera para medicina interna (especialista)</td><td>7,66 días</td><td>ConsultorSalud / Circular 038 de 2025</td></tr>
+              <tr><td>Espera para psiquiatría</td><td>11,58 días</td><td>ConsultorSalud / Circular 038 de 2025</td></tr>
+              <tr><td>Espera para gastroenterología</td><td>13,9 días</td><td>ConsultorSalud / Circular 038 de 2025</td></tr>
+              <tr><td>Aumento de quejas ante Supersalud (2024)</td><td>+12% frente a 2023</td><td>El Universal / Supersalud</td></tr>
+              <tr><td>Incremento en peticiones y reclamos (may. 2024)</td><td>+15,51% frente al año anterior</td><td>Supersalud</td></tr>
+              <tr><td>Deuda de EPS con hospitales del Quindío</td><td>Supera $1 billón de pesos</td><td>Crónica del Quindío, mayo 2026</td></tr>
+              <tr><td>Deuda específica con Redsalud Armenia</td><td>~$17.000 millones</td><td>Gerente Redsalud Armenia, mayo 2026</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- paso 3 -->
+    <div class="paso">
+      <div class="paso-header" onclick="togglePaso(this)">
+        <div class="paso-num">03</div>
+        <div class="paso-header-text">
+          <h3>Identificación de restricciones y criterios</h3>
+          <p>Qué límites tiene la solución y qué debe cumplir</p>
+        </div>
+        <span class="paso-toggle">+</span>
+      </div>
+      <div class="paso-body">
+        <h4>Restricciones del problema</h4>
+        <ul>
+          <li><strong>Presupuesto limitado:</strong> Los hospitales públicos dependen de recursos del Estado; no se puede suponer inversión ilimitada.</li>
+          <li><strong>Conectividad:</strong> En zonas rurales del Quindío el acceso a internet es limitado, lo que restringe soluciones 100% digitales.</li>
+          <li><strong>Brecha tecnológica:</strong> Una parte importante de los usuarios son adultos mayores que no manejan teléfonos inteligentes.</li>
+          <li><strong>Marco legal:</strong> Cualquier solución debe cumplir con la Ley 100 de 1993 y las normas del Ministerio de Salud.</li>
+          <li><strong>Recursos humanos:</strong> El personal administrativo ya es insuficiente; la solución no debe aumentar la carga laboral innecesariamente.</li>
+        </ul>
+ 
+        <h4 style="margin-top:1.25rem">Criterios de éxito</h4>
+        <ul>
+          <li>Reducir el tiempo de espera para obtener una cita en al menos un 40%</li>
+          <li>Ser accesible para personas mayores (interfaz simple)</li>
+          <li>Funcionar con conectividad mínima o sin internet (modo híbrido)</li>
+          <li>Integrarse con los sistemas existentes de las EPS</li>
+          <li>Ser escalable a todos los municipios del Quindío</li>
+        </ul>
+      </div>
+    </div>
+ 
+    <!-- paso 4 -->
+    <div class="paso">
+      <div class="paso-header" onclick="togglePaso(this)">
+        <div class="paso-num">04</div>
+        <div class="paso-header-text">
+          <h3>Generación de alternativas</h3>
+          <p>Proponer múltiples soluciones posibles al problema</p>
+        </div>
+        <span class="paso-toggle">+</span>
+      </div>
+      <div class="paso-body">
+        <h4>Alternativas propuestas</h4>
+        <p>El equipo identificó las siguientes posibles soluciones:</p>
+ 
+        <div class="alternativas">
+          <div class="alternativa-card">
+            <strong>Alternativa A – App móvil de citas médicas</strong>
+            <p>Desarrollo de una aplicación móvil gratuita para Android que permita agendar,
+            cancelar y consultar citas desde el celular.</p>
+          </div>
+          <div class="alternativa-card">
+            <strong>Alternativa B – Línea telefónica centralizada</strong>
+            <p>Un call center departamental único con horario extendido que gestione todas las
+            citas de los hospitales públicos del Quindío.</p>
+          </div>
+          <div class="alternativa-card">
+            <strong>Alternativa C – Portal web + kioscos físicos</strong>
+            <p>Plataforma web accesible desde computadores, complementada con kioscos táctiles
+            instalados en hospitales, alcaldías y bibliotecas municipales.</p>
+          </div>
+          <div class="alternativa-card">
+            <strong>Alternativa D – Sistema mixto: WhatsApp + base de datos</strong>
+            <p>Bot de WhatsApp conectado a una base de datos centralizada para gestionar citas
+            sin necesidad de descargar ninguna aplicación adicional.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- paso 5 -->
+    <div class="paso">
+      <div class="paso-header" onclick="togglePaso(this)">
+        <div class="paso-num">05</div>
+        <div class="paso-header-text">
+          <h3>Análisis y selección de alternativas</h3>
+          <p>Comparar opciones con base en los criterios definidos</p>
+        </div>
+        <span class="paso-toggle">+</span>
+      </div>
+      <div class="paso-body">
+        <h4>Matriz de evaluación</h4>
+        <p>Se evaluó cada alternativa según los criterios del Paso 3, usando una escala de 1 a 5
+        (5 = cumple totalmente el criterio):</p>
+ 
+        <div class="tabla-wrapper" style="margin-top:1rem">
+          <table>
+            <thead>
+              <tr>
+                <th>Criterio</th>
+                <th>A – App</th>
+                <th>B – Call center</th>
+                <th>C – Web + kioscos</th>
+                <th>D – WhatsApp</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Reducción tiempo de espera</td><td>5</td><td>3</td><td>4</td><td>4</td></tr>
+              <tr><td>Accesible para adultos mayores</td><td>2</td><td>5</td><td>4</td><td>3</td></tr>
+              <tr><td>Funciona sin internet</td><td>1</td><td>5</td><td>2</td><td>2</td></tr>
+              <tr><td>Integración con EPS</td><td>4</td><td>3</td><td>4</td><td>3</td></tr>
+              <tr><td>Escalabilidad</td><td>5</td><td>3</td><td>4</td><td>4</td></tr>
+              <tr><td>Costo de implementación</td><td>2</td><td>3</td><td>3</td><td>4</td></tr>
+              <tr><td><strong>Total</strong></td><td><strong>19</strong></td><td><strong>22</strong></td><td><strong>21</strong></td><td><strong>20</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+ 
+        <div class="info-box" style="margin-top:1rem">
+          <strong>Resultado del análisis:</strong> La <strong>Alternativa B (línea telefónica)</strong> fue la que obtuvo el mayor puntaje al considerar todas las restricciones que hemos considerado segun el contexto, especialmente la brecha de la tecnologia y la conexion con el lado rural. Sin embargo,
+          una solución <em>híbrida B+D</em> (call center + WhatsApp) es lo que hemos considerado la mejor opcion para afrontar este problema.
+        </div>
+      </div>
+    </div>
+ 
+    <!-- paso 6 -->
+    <div class="paso">
+      <div class="paso-header" onclick="togglePaso(this)">
+        <div class="paso-num">06</div>
+        <div class="paso-header-text">
+          <h3>Implementación de la solución</h3>
+          <p>Plan de acción para ejecutar la alternativa elegida</p>
+        </div>
+        <span class="paso-toggle">+</span>
+      </div>
+      <div class="paso-body">
+        <h4>Plan de implementación – Sistema híbrido (Call center + WhatsApp)</h4>
+ 
+        <div class="tabla-wrapper">
+          <table>
+            <thead>
+              <tr><th>Fase</th><th>Actividad</th><th>Responsable</th><th>Tiempo est.</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Fase 1</td><td>Diagnóstico y mapeo de procesos actuales</td><td>Ingenieros + hospitales</td><td>2 meses</td></tr>
+              <tr><td>Fase 2</td><td>Diseño de la plataforma y protocolo del call center</td><td>Equipo TI + Secretaría</td><td>3 meses</td></tr>
+              <tr><td>Fase 3</td><td>Desarrollo del bot de WhatsApp y base de datos</td><td>Desarrolladores</td><td>4 meses</td></tr>
+              <tr><td>Fase 4</td><td>Capacitación del personal administrativo</td><td>RRHH hospitalario</td><td>1 mes</td></tr>
+              <tr><td>Fase 5</td><td>Piloto en 2 hospitales (Armenia y Calarcá)</td><td>Todos los actores</td><td>2 meses</td></tr>
+              <tr><td>Fase 6</td><td>Evaluación y expansión a todo el departamento</td><td>Secretaría de Salud</td><td>3 meses</td></tr>
+            </tbody>
+          </table>
+        </div>
+ 
+        <img
+          src="gantt.png"
+          alt="Imagen donde se representa el grafico de accion con las cosas que se haran en un lapso de 15 meses."
+          class="img-gantt"
+        />
+        <p class="img-caption">Diagrama de Gantt — distribución temporal de las 6 fases del proyecto a lo largo de 15 meses.</p>
+      </div>
+    </div>
+ 
+    <!-- paso 7 -->
+    <div class="paso">
+      <div class="paso-header" onclick="togglePaso(this)">
+        <div class="paso-num">07</div>
+        <div class="paso-header-text">
+          <h3>Evaluación de la solución</h3>
+          <p>Medir si la solución resolvió el problema</p>
+        </div>
+        <span class="paso-toggle">+</span>
+      </div>
+      <div class="paso-body">
+        <h4>Indicadores de evaluación propuestos</h4>
+        <ul>
+          <li><strong>Tiempo de espera:</strong> Medir el tiempo promedio entre solicitud y cita otorgada (antes vs. después).</li>
+          <li><strong>Satisfacción del usuario:</strong> Encuesta de satisfacción semestral (escala 1–5).</li>
+          <li><strong>Tasa de adopción:</strong> Porcentaje de usuarios que usan el nuevo canal vs. atención presencial.</li>
+          <li><strong>Reducción de filas:</strong> Conteo de personas en ventanilla antes vs. después del sistema.</li>
+          <li><strong>Citas perdidas (no show):</strong> Número de citas no asistidas sin cancelación previa.</li>
+        </ul>
+ 
+        <h4 style="margin-top:1.25rem">Resultado esperado</h4>
+        <p>Con la implementación del sistema híbrido se proyecta:</p>
+        <ul>
+          <li>Reducción del 45–60% en el tiempo de espera para cita médica general</li>
+          <li>Aumento del 30% en la satisfacción de los usuarios</li>
+          <li>Disminución del 50% en la carga de ventanilla presencial</li>
+        </ul>
+ 
+        <div class="info-box" style="margin-top:1.25rem">
+          <strong>Nota metodológica:</strong> Como este es un proyecto académico y la solución
+          no se ha implementado aún, la evaluación es <em>proyectada</em> con base en los datos
+          recopilados y el análisis comparativo realizado en los pasos anteriores.
+        </div>
+ 
+        <h4 style="margin-top:1.75rem">Reflexión del equipo</h4>
+        <p>
+          Aplicar el Método de los 7 Pasos del Ingeniero nos permitió comprender que resolver
+          un problema real no se trata solo de proponer una solución tecnológica, sino de
+          entender primero a fondo el contexto, las personas afectadas y las limitaciones del
+          entorno. Antes de este ejercicio, veíamos el problema de las citas médicas como algo
+          cotidiano y normalizado; después de investigarlo, entendemos que detrás de cada fila
+          y cada cita negada hay una persona que necesita atención urgente.
+        </p>
+        <p style="margin-top:1.75rem"> Y es que ademas de todo lo aprendido con la ayuda de este proyecto, tambien debemos de tener en cuenta todo lo que se aprendio del trabajo en equipo, logrando grandes avances en la comunicion. </p>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+ 
+<!--solucion elegida-->
+<section id="solucion">
+  <div class="container">
+    <div class="section-label">Propuesta final</div>
+    <h2 class="section-title">Propuesta de solución seleccionada</h2>
+    <div class="divider"></div>
+    <p>Tras el análisis comparativo, el equipo propone la siguiente solución integral:</p>
+ 
+    <div class="sol-grid">
+      <div class="sol-card destacada">
+        <div class="sol-badge">✅ Solución seleccionada</div>
+        <h3>Sistema Híbrido de Gestión de Citas Médicas</h3>
+        <p>
+          Implementación de una <strong>línea de atención centralizada</strong> del departamento
+          del Quindío, integrada con un <strong>bot de WhatsApp</strong> con lenguaje natural simple.
+          Ambos canales se conectan a una <strong>base de datos unificada</strong> que comparten
+          todos los hospitales públicos del departamento.
+        </p>
+        <p style="margin-top:0.75rem">
+          Esto permite que personas sin smartphone usen el teléfono fijo o celular básico, mientras
+          quienes tienen WhatsApp puedan gestionar sus citas sin descargar nada nuevo. El sistema
+          también envía recordatorios automáticos para reducir las citas perdidas.
+        </p>
+      </div>
+      <div class="sol-card">
+        <div class="sol-badge alt">Ventajas</div>
+        <h3>¿Por qué esta solución?</h3>
+        <ul style="padding-left:1.25rem; margin-top:0.5rem">
+          <li style="font-size:0.9rem">Inclusiva: funciona para adultos mayores</li>
+          <li style="font-size:0.9rem">No requiere internet en el usuario</li>
+          <li style="font-size:0.9rem">WhatsApp ya está instalado en el 90% de celulares</li>
+          <li style="font-size:0.9rem">Bajo costo comparado con apps nativas</li>
+          <li style="font-size:0.9rem">Escalable a todos los municipios</li>
+        </ul>
+      </div>
+      <div class="sol-card">
+        <div class="sol-badge alt">Retos</div>
+        <h3>Desafíos a superar</h3>
+        <ul style="padding-left:1.25rem; margin-top:0.5rem">
+          <li style="font-size:0.9rem">Voluntad política de la Gobernación</li>
+          <li style="font-size:0.9rem">Integración con sistemas de las EPS</li>
+          <li style="font-size:0.9rem">Capacitación del personal hospitalario</li>
+          <li style="font-size:0.9rem">Financiamiento inicial del proyecto</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!--juego-->
+<section id="juego" style="background: var(--gris-oscuro); padding: 5rem 2rem;">
+  <div class="container">
+    <div class="section-label" style="color:#9FE1CB">Experiencia interactiva</div>
+    <h2 class="section-title light">¿Puedes gestionar el sistema?</h2>
+    <div class="divider"></div>
+    <p style="color:#B4B2A9; max-width:600px; margin-bottom:2.5rem;">
+      Detrás de cada estadística hay una decisión difícil. En este simulador asumes el rol
+      del administrador de un centro de salud del Quindío: recursos limitados, más pacientes
+      que slots disponibles, y la presión de no dejar caer el sistema.
+    </p>
+ 
+    <div style="background:#3C3934; border-radius:12px; padding:2rem; display:flex; align-items:center; justify-content:space-between; gap:2rem; flex-wrap:wrap;">
+      <div style="display:flex; flex-direction:column; gap:1rem;">
+        <div style="display:flex; gap:1.5rem; flex-wrap:wrap;">
+          <div>
+            <div style="font-size:0.68rem; text-transform:uppercase; letter-spacing:0.1em; color:#888780; margin-bottom:3px;">Dificultad</div>
+            <div style="font-size:0.9rem; color:var(--dorado-claro); font-weight:600;">Recursos limitados</div>
+          </div>
+          <div>
+            <div style="font-size:0.68rem; text-transform:uppercase; letter-spacing:0.1em; color:#888780; margin-bottom:3px;">Duración</div>
+            <div style="font-size:0.9rem; color:#D3D1C7;">6 turnos</div>
+          </div>
+          <div>
+            <div style="font-size:0.68rem; text-transform:uppercase; letter-spacing:0.1em; color:#888780; margin-bottom:3px;">Objetivo</div>
+            <div style="font-size:0.9rem; color:#D3D1C7;">Espera promedio ≤ 10 días</div>
+          </div>
+        </div>
+        <div style="display:flex; gap:0.6rem; flex-wrap:wrap;">
+          <span style="background:#1a3a2e; color:#5DCAA5; font-size:0.72rem; font-weight:600; padding:4px 10px; border-radius:2px; letter-spacing:0.05em;">TRIAGE</span>
+          <span style="background:#2a1a08; color:var(--dorado-claro); font-size:0.72rem; font-weight:600; padding:4px 10px; border-radius:2px; letter-spacing:0.05em;">DECISIONES DIFÍCILES</span>
+          <span style="background:#2a1010; color:#F09595; font-size:0.72rem; font-weight:600; padding:4px 10px; border-radius:2px; letter-spacing:0.05em;">PACIENTES CRÍTICOS</span>
+        </div>
+      </div>
+      <a href="juego.html" target="_blank" style="
+        display:inline-flex; align-items:center; gap:0.6rem;
+        background:var(--verde); color:#fff;
+        text-decoration:none; font-weight:700; font-size:1rem;
+        padding:14px 32px; border-radius:6px;
+        transition:background 0.2s; white-space:nowrap;
+        letter-spacing:0.02em;
+      " onmouseover="this.style.background='#1D9E75'" onmouseout="this.style.background='#0F6E56'">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5,3 19,12 5,21"/></svg>
+        Jugar ahora
+      </a>
+    </div>
+  </div>
+</section>
+ 
+<!--referencias-->
+<section id="referencias">
+  <div class="container">
+    <div class="section-label">Bibliografía</div>
+    <h2 class="section-title">Referencias</h2>
+    <div class="divider"></div>
+    <p>Fuentes consultadas para la elaboración de este proyecto:</p>
+ 
+    <div class="ref-list">
+      <div class="ref-item">
+        <span>[1]</span> Corte Constitucional de Colombia. (2025).
+        <em>Auto 1174 de 2025 – Seguimiento a la Sentencia T-760 de 2008 sobre oportunidad en citas médicas</em>.
+        Disponible en: corteconstitucional.gov.co
+      </div>
+      <div class="ref-item">
+        <span>[2]</span> Ministerio de Salud y Protección Social. (2025).
+        <em>Circular Externa 038 de 2025 – Modelo de Gestión de Tiempos de Espera (MGTE), Fase I</em>.
+        ConsultorSalud. Disponible en: consultorsalud.com/tiempos-de-espera-para-citas-con-especialistas
+      </div>
+      <div class="ref-item">
+        <span>[3]</span> Superintendencia Nacional de Salud. (2024).
+        <em>Comunicado 003 – Por cada 10.000 afiliados se presentan 322 reclamos en salud</em>.
+        Disponible en: docs.supersalud.gov.co
+      </div>
+      <div class="ref-item">
+        <span>[4]</span> El Universal. (22 de febrero de 2024).
+        <em>Aumentaron quejas y reclamos sobre las EPS según Supersalud</em>.
+        Disponible en: eluniversal.com.co
+      </div>
+      <div class="ref-item">
+        <span>[5]</span> Crónica del Quindío. (25 de septiembre de 2024).
+        <em>Fallas de agendamiento y entrega de medicamentos: quejas recurrentes de pacientes en el Quindío</em>.
+        Disponible en: cronicadelquindio.com
+      </div>
+      <div class="ref-item">
+        <span>[6]</span> Castillo, J. A. (7 de mayo de 2026).
+        <em>Salud: deudas de EPS en Quindío superan el billón de pesos</em>.
+        Crónica del Quindío. Disponible en: cronicadelquindio.com/armenia/salud-deudas-de-eps-en-quindio-superan-el-billon-de-pesos/
+      </div>
+      <div class="ref-item">
+        <span>[7]</span> Caracol Radio. (28 de febrero de 2023).
+        <em>El gran problema del agendamiento de citas médicas en Colombia</em>.
+        Disponible en: caracol.com.co/2023/02/28/el-gran-problema-del-agendamiento-de-citas-medicas-en-colombia/
+      </div>
+      <div class="ref-item">
+        <span>[8]</span> Ministerio de Salud y Protección Social. (2025).
+        <em>Resolución 2117 de 2025 – Modelo de Gestión de Tiempos de Espera (MGTE)</em>.
+        Disponible en: minsalud.gov.co
+      </div>
+      <div class="ref-item">
+        <span>[9]</span> Bermudez Martinez, Y. S. &amp; Cortez Valencia, S. (mayo de 2026).
+        <em>Encuesta sobre la solicitud de citas médicas en el Quindío</em> [encuesta propia, n=27].
+        Universidad del Quindío.
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!--parte baja-->
+<footer>
+  <p>Proyecto académico – <strong>Introducción a la Ingeniería de Sistemas y Computación</strong></p>
+  <p style="margin-top:6px">Universidad del Quindío · Armenia, Colombia · 2025–2026</p>
+</footer>
+ 
+<script src="main.js"></script>
+ 
+</body>
+</html>
